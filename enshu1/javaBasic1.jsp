@@ -29,7 +29,7 @@
       out.println("<br>");
       out.println("お茶を6個購入する場合の金額は、\"900\"円です");
       out.println("<br>");
-      out.println("所持金で水を\"10\"個購入できます");
+      out.println("所持金で水を10個購入できます");
       out.println("<br>");
       out.println("所持金でお茶を買えるだけ買った後は、\"100\"残ります");
   %>
