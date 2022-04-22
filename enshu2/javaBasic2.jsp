@@ -74,11 +74,13 @@ table th, table td {
 
   <h2>平均点</h2>
   <%
-  out.println("<p>国語: " + (double) (aScore[0] + bScore[0]) / 2 + "</p>");
-  out.println("<p>数学: " + (double) (aScore[1] + bScore[1]) / 2 + "</p>");
-  out.println("<p>英語: " + (double) (aScore[2] + bScore[2]) / 2 + "</p>");
+  double[] avg = {(double) (aScore[0] + bScore[0]) / 2, (double) (aScore[1] + bScore[1]) / 2, (double) (aScore[2] + bScore[2]) / 2};
+  out.println("<p>国語: " + avg[0] + "</p>");
+  out.println("<p>数学: " + avg[1] + "</p>");
+  out.println("<p>英語: " + avg[2] + "</p>");
   int total = aScore[0] + aScore[1] + aScore[2] + bScore[0] + bScore[1] + bScore[2];
-  out.println("<p>合計: " + (double) total / 2 + "</p>");
+  double avgTotal = (double) total / 2;
+  out.println("<p>合計: " + avgTotal + "</p>");
   %>
 </body>
 </html>
